@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuiltInPipesComponent,
     CustomPipesComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

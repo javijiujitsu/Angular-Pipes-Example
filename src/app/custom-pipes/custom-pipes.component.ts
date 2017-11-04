@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomPipesComponent implements OnInit {
 
+  stuff: Array<Object> = [];
+  pattern: string;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  addItem(item) {
+    this.stuff.push({name: item});
   }
 
 }
