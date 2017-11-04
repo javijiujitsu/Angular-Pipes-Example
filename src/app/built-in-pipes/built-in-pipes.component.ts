@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuiltInPipesComponent implements OnInit {
 
+  today = new Date();
+
   constructor() { }
 
   ngOnInit() {
