@@ -13,5 +13,15 @@ export class BuiltInPipesComponent implements OnInit {
 
   ngOnInit() {
   }
+  increment() {
+
+    const changedDate = new Date(this.today);
+
+    // increase the day of the month
+    changedDate.setDate(this.today.getDate() + 1);
+
+    // update our date
+    this.today = changedDate;
+  }
 
 }
